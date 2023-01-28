@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="parent1">
+      <h1>STOPWATCH</h1>
+      <div id="child1">
+        <span id="minute" class="digit">00</span>
+        <span class="colon">:</span>
+        <span id="second" class="digit">00</span>
+        <span class="colon">.</span>
+        <span id="count" class="digit">00</span>
+      </div>
+      <div id="child2">
+        <button id="start" class="btn" onclick="start()">Start</button>
+        <button id="stop" class="btn" onclick="stop()">Stop</button>
+        <button id="reset" class="btn" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <div id="parent2">
+      <h1>TIMER</h1>
+      <div id="child1">
+        <input
+          type="number"
+          id="hour"
+          class="Userinput"
+          placeholder="00"
+          max="999"
+          min="00"
+        />
+        <span class="colon">:</span>
+        <input
+          type="number"
+          id="minute2"
+          class="Userinput"
+          placeholder="00"
+          max="59"
+          min="00"
+        />
+        <span class="colon">:</span>
+        <input
+          type="number"
+          id="second2"
+          class="Userinput"
+          placeholder="00"
+          max="59"
+          min="00"
+        />
+      </div>
+      <div id="child2">
+        <button id="start2" class="btn">Start</button>
+        <button id="stop2" class="btn">Stop</button>
+        <button id="reset2" class="btn">Reset</button>
+      </div>
+      <span id="error"></span>
+      <span id="finish">The countdown has finished</span>
+    </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
